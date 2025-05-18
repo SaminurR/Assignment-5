@@ -21,7 +21,7 @@
     <header>
         <nav class="flex justify-between bg-white px-6 py-3 rounded-2xl mt-6 mb-5">
             <div class="flex items-center gap-4 py-4">
-                <img src="A5-Dev-Board/assets/logo.png" alt="">
+                <img class="hover:opacity-50" src="A5-Dev-Board/assets/logo.png" alt="">
                 <h3 class="text-4xl poppins-light pt-2">Dev<span class="font-bold ">Board</span></h3>
             </div>
             <div class="flex items-center gap-9">
@@ -36,41 +36,50 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <div class="grid grid-cols-12 gap-5 mb-64">
-                <div class="bg-white rounded-2xl col-span-9 p-6 relative">
-                    <div>
-                        <!-- top/banner section  -->
-                        <div class="flex glex gap-6 pb-8">
-                            <div class="bg-[#F4F7FF] rounded-xl h-32 w-1/4">
-                                <div class="p-4 rounded-xl flex justify-center items-center gap-5 h-full">
-                                    <div class="bg-white p-2.5 rounded-full">
-                                        <img src="A5-Dev-Board/assets/checkbox.png" alt="">
-                                    </div>
-                                    <!-- Task assignment  box -->
-                                    <div class="font-bold">
-                                        <p class="text-sm font-medium opacity-80">Task Assigned</p>
-                                        <p class="text-3xl">05</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-gradient-to-tr from-[#3752FD] to-[#9BA8F8] rounded-xl h-32 w-1/2">
-                                <div
-                                    class="flex items-center justify-center mx-auto discover-something gap-5 text white text-2xl font-medium">
-                                    <img src="A5-Dev-Board/assets/board.png" alt="">
-                                    <h1>Discover Something <br> New Today</h1>
+    <main class="grid grid-cols-12 gap-5">
+        <div class="bg-white rounded-2xl col-span-9 p-6 relative">
 
-                                </div>
-
-                            </div>
+            <!-- top/banner section  -->
+            <div class="flex gap-6 pb-8">
+                <div class="bg-[#F4F7FF] rounded-xl h-32 w-1/4">
+                    <div class="p-4 rounded-xl flex justify-center items-center gap-5 h-full">
+                        <div class="bg-white p-2.5 rounded-full">
+                            <img src="A5-Dev-Board/assets/checkbox.png" alt="">
+                        </div>
+                        <!-- Task assignment  box -->
+                        <div class="font-bold">
+                            <p class="text-sm font-medium opacity-80">Task Assigned</p>
+                            <p class="text-3xl">05</p>
                         </div>
                     </div>
-
                 </div>
-
+                <div class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl h-32 w-1/2">
+                    <div
+                        class="flex items-center justify-center mx-auto discover-something gap-5 text-white font-medium text-2xl">
+                        <img src="A5-Dev-Board/assets/board.png" alt="">
+                        <h1>Discover Something <br>
+                            New Today!</h1>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-xl h-32 w-1/4 ">
+                    <div class="flex items-center justify-center h-full gap-4">
+                        <div class="bg-white p-2.5 rounded-full">
+                            <img class="" src="A5-Dev-Board/assets/calender.png" alt="">
+                        </div>
+                        <div class="text-2xl">
+                            <p>Wed, <br> <span class="font-bold">Jul 28 2025</span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+            <hr class="border-dashed border-[#3752FD] opacity-20 absolute border-t-4 left-0 right-0">
+            
+        </div>
+
+        <!-- Activity log section  -->
+        <div class="bg-white rounded-2xl col-span-3 flex flex-col pt-8">
+            
+        </div>
     </main>
 
 </body>
