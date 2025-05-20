@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#F4F7FF]">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Added Google font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- daisy ui cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#F4F7FF] text-[#00303C] poppins-medium mx-auto">
+    <main class="max-w-screen-2xl justify-center items-center mx-auto">
+
+        <!-- navbar -->
+        <header>
+            <nav class="flex justify-between bg-white px-6 py-3 rounded-2xl mt-6 mb-5 shadow-md">
+                <div class="flex items-center gap-4 py-4">
+                    <img class="hover:opacity-50" src="A5-Dev-Board/assets/logo.png" alt="">
+                    <h3 class="text-4xl poppins-light pt-2">Dev<span class="font-bold ">Board</span></h3>
+                </div>
+                <div class="flex items-center gap-9">
+                    <a href="index.html">
+                        <button
+                            class="btn btn-primary border-none bg-[#3752FD] hover:bg-[#0022ff] px-5 py-2.5 rounded-lg text-white">Back
+                            to Desk</button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <div class="flex mx-auto justify-center items-center">
+            <h1 class="font-bold text-5xl p-6 ">Blogs</h1>
+        </div>
+
+
+        <section class="grid grid-cols-12 gap-5">
+
+            <!-- qstn 1 -->
+            <div class="bg-white rounded-2xl col-span-12 p-4 relative shadow-md">
+
+                <h1 class=" font-bold text-2xl p-4 mx-auto">
+                    Question-1: What are the different ways to select and element in the DOM?</h1>
+                <hr class="border-dashed border-[#3752FD] opacity-20 absolute border-t-4 left-0 right-0">
+                <p class="text-xl p-4">There is 5 way to select an Element in the DOM. <br>
+                    1. getElementById <br>
+                    2. getElementByClassName <br>
+                    3. getElementsByTagName <br>
+                    4. querySelector <br>
+                    5. querySelectorAll
+                </p>
+            </div>
+
+
+            <div class="bg-white rounded-2xl col-span-12 p-4 relative shadow-md">
+
+                <h1 class=" font-bold text-2xl p-4 mx-auto">
+                    Question-2: What are the difference between innerHTML, and innerText, and textContent?</h1>
+                <hr class="border-dashed border-[#3752FD] opacity-20 absolute border-t-4 left-0 right-0">
+                <p class="text-xl p-4">Well the innerHTML target the html tag of the element.
+                    And innerText targets the text inside that element.
+                    Finnaly about "textContent" I donno! What is that? i never used that till now!
+                </p>
+            </div>
+
+
+            <div class="bg-white rounded-2xl col-span-12 p-4 relative shadow-md">
+
+                <h1 class=" font-bold text-2xl p-4 mx-auto">
+                    Question-3: What is event "delegation" in the DOM?</h1>
+                <hr class="border-dashed border-[#3752FD] opacity-20 absolute border-t-4 left-0 right-0">
+                <p class="text-xl p-4"> I dunno what is that! Maybe <I></I> used it sometimes.
+                    The "delegation" word reminds me these type of things:
+                    document.getElementByID("selected-id") <br> .addEventListener"click", function (event) {codes}; etc!
+                </p>
+            </div>
+
+
+            <div class="bg-white rounded-2xl col-span-12 p-4 relative shadow-md">
+
+                <h1 class=" font-bold text-2xl p-4 mx-auto">
+                    Question-4: What is event bubbling in the DOM?</h1>
+                <hr class="border-dashed border-[#3752FD] opacity-20 absolute border-t-4 left-0 right-0">
+                <p class="text-xl p-4">I know that! Event bubbling is a way or path for going to the target element.
+                    when it finds the target, it get back doing bubble (bubbling-bubbling) in the first position where
+                    it started.
+                </p>
+            </div>
+        </section>
+        <script src="scripts/script.js"></script>
+    </main>
+</body>
+
+</html>
