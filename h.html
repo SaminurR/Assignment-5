@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Color Button</title>
+
+</head>
+
+<body>
+
+    <button id="btn-change-color" class="p-6 shadow-md">Change Color</button>
+
+    <script>
+        const colors = ['#FFB3BA', '#BAE1FF', '#BAFFC9']; // pastel red, blue, green
+        let colorIndex = 0;
+
+        document.getElementById('btn-change-color')
+            .addEventListener('click', function () {
+                document.body.style.backgroundColor = colors[colorIndex];
+                colorIndex = (colorIndex + 1) % colors.length;
+            });
+    </script>
+
+</body>
+
+</html>

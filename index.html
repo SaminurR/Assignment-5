@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-[#F4F7FF]">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-[#F4F7FF] text-[#00303C] poppins-medium mx-auto">
+<body class="bg-[#F4F7FF] text-[#00303C] poppins-medium mx-auto pt-2 pb-20">
     <main class="max-w-screen-2xl justify-center items-center mx-auto">
 
         <!-- navbar -->
@@ -34,9 +34,11 @@
                         <img src="A5-Dev-Board/assets/checkbox.png" alt="">
                         <h3 id="task-assigned-complete" class="font-bold poppins-bold text-3xl">23</h3>
                     </div>
-                    <div class="p-2.5 bg-[#F4F7FF] rounded-full hover:bg-[#3268ff]">
-                        <img src="A5-Dev-Board/assets/theme-btn.png" alt="">
-                    </div>
+                    <button id="color-changing-btn">
+                        <div class="p-2.5 bg-[#F4F7FF] rounded-full hover:bg-[#3268ff]">
+                            <img src="A5-Dev-Board/assets/theme-btn.png" alt="">
+                        </div>
+                    </button>
                 </div>
             </nav>
         </header>
@@ -74,7 +76,7 @@
                                 <img class="" src="A5-Dev-Board/assets/calender.png" alt="">
                             </div>
                             <div class="text-2xl">
-                                <p>Wed, <br> <span class="font-bold">Jul 28 2025</span></p>
+                                <p id="date-today">Wed, <br> <span class="font-bold">May 21 2025</span></p>
                             </div>
                         </div>
                     </div>
@@ -299,6 +301,7 @@
             </div>
         </section>
         <script src="scripts/script.js"></script>
+        <script src="scripts/themebtn.js"></script>
     </main>
 </body>
 
